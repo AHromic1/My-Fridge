@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyFridge</string>
+    <string name="itemName">Unesite stavku</string>
+    <string name="urgent">Hitno</string>
+</resources>
