@@ -1,5 +1,6 @@
 package com.example.myfridge
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -20,6 +21,7 @@ class AddActivity : AppCompatActivity() {
     //add aktivnost
 
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add)
@@ -33,6 +35,19 @@ class AddActivity : AppCompatActivity() {
         confirm = findViewById(R.id.submitButton)
         confirm.setOnClickListener {
 
+        }
+
+        item = findViewById(R.id.itemEditText)
+
+        urgent = findViewById(R.id.urgentCheckBox)
+        urgent.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (isChecked) {
+                // Checkbox is checked
+                // You can perform actions here when the checkbox is checked
+            } else {
+                // Checkbox is unchecked
+                // You can perform actions here when the checkbox is unchecked
+            }
         }
 
 
